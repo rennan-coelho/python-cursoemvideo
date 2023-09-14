@@ -41,3 +41,4 @@ elif escolha == '4':
     print("Resultado: ", divisao(num1, num2))
 else:
     print("Opção inválida")
+
