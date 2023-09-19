@@ -1,6 +1,3 @@
-n = input('Digite seu nome: ')
-if 'SILVA' in n.upper():
-    print("Você tem 'SILVA' no nome.")
-else:
-    print("Você não tem 'SILVA' no nome.")
-        
+nome = str(input('Digite seu nome: ')).strip()
+print('Seu nome tem silva: {}'.format('SILVA' in nome.upper()))
+

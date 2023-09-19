@@ -1,6 +1,6 @@
-nc = input("Digite seu nome completo: ")
-pdn = nc.split()
-pn = pdn[0]
-un = pdn[-1]
-print("Primeiro: {}" .format(pn))
-print("Último: {}" .format(un))
+n = str(input('Digite seu nome completo: ')).strip()
+nome = n.split()
+print('Seu primeiro nome é {}.'.format(nome[0]))
+print('Seu último nome é {}.'.format(nome[len(nome)-1]))
+
+

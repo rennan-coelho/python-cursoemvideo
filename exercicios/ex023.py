@@ -1,17 +1,14 @@
 n = int(input('Digite um número de 0 a 9999: '))
-if 0 <= n <= 9999:
-    u = n % 10
-    d = (n // 10) % 10
-    c = (n // 100) % 10
-    m = (n // 1000) % 10
+u = n // 1 % 10
+d = n // 10 % 10
+c = n // 100 % 10
+m = n // 1000 % 10
+print('Analisando o número {}' .format(n))
+print('Unidade: {}' .format(u))
+print('Dezena: {} ' .format(d))
+print('Centena: {}' .format(c))
+print('Milhar: {}' .format(m))
 
-    print('Unidade: ', u)
-    print('dezena: ', d)   
-    print('Centena: ', c)
-    print('Milhar: ', m)
 
-else: 
-    print('Número fora do intervalo válido.')
-        
 
 
