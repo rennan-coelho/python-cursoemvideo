@@ -1,10 +1,10 @@
 sa = float(input('Digite o valor atual do seu salário: R$'))
 if sa <= 1250:
-    aum1 = sa + (sa*0.15)
-    print('Seu salário agora será dde R${:.2f}'.format(aum1))
+    print('Quem ganhava R${:.2f} passa a ganhar R${:.2f}'.format(sa, sa + (sa*0.15)))
 else:
-    aum2 = sa + (sa*0.10)
-    print('Seu salá agora será de R${:.2f}'.format(aum2))
+    print('Quem ganhava R${:.2f} passa a ganhar R${:.2f}'.format(sa, sa + (sa*0.10)))
+    
+
 
 
     

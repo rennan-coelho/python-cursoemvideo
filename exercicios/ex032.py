@@ -1,7 +1,11 @@
-ano = int(input('Digite uma ano aqui, para saber se ele é bissexto ou não: '))
-bi = ano % 4
-if bi == 0:
-    print('{} é um ano bissexto!'.format(ano))
+from datetime import date
+ano = int(input('Qual ano deseja analisar? Coloque 0 para analisar o ano atual: '))
+if ano == 0:
+    ano = date.today().year # Analisar o ano atual configurado na maquina
+if ano % 4 == 0 and ano % 100 != 0 or ano % 400 ==0:
+    print('{} é um ano BISSEXTO!'.format(ano))
 else:
-    print('{} não é um ano bissexto!'.format(ano))    
+    print('{} não é um ano BISSEXTO!'.format(ano))
+    
+
     

@@ -1,7 +1,8 @@
-vel = int(input('Digite a velocidade que você estava: '))
-vdm = (vel - 80) * 7
+vel = float(input('Digite a velocidade atual do carro: '))
 if vel > 80:
-    print('Você foi multado! e o valor de sua multa será de R${}.00'.format(vdm))
-else:
-    print('Você estava dentro do limite, parabéns!')    
+    print('MULTADO! e o valor de sua multa será de R${:.2f}'.format((vel - 80) * 7)) 
+print('Tenha um bom dia! Dirija com cuidado')
+
+
+
 
